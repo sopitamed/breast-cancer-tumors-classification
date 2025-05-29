@@ -37,8 +37,28 @@ For full methodological details and results, please refer to the included invest
 ---
 
 ## 🖼️ Interface Preview
+> ![Interface Preview](interface_preview.jpg)
 
-> You can include a screenshot of the GUI by uploading an image and linking it below:
+##💻 Requirements
+GNU Octave (recommended version ≥ 7.0)
 
-```markdown
-![Interface Preview](images/interface_preview.png)
+The .mat model files (nb_model.mat, rn_model.mat, svm_model.mat) must be in the same folder as BCClassification.m to ensure correct execution.
+
+No additional packages required beyond base Octave functionality.
+
+##🚀 How to Use
+Open Octave and navigate to the project folder.
+
+Run BCClassification.m to launch the user interface.
+
+Input the tumor characteristics manually in the provided fields.
+
+Submit the input to receive predictions from all three algorithms.
+
+##📖 Report
+For more detailed information on the dataset, preprocessing methods, model training, and evaluation metrics, refer to the full investigation report: report.pdf.
+
+##📬 Contact
+For questions, academic inquiries, or contributions, feel free to open an issue or contact the author(s).
+
+
