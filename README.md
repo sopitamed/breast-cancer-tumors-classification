@@ -1,16 +1,44 @@
-# breast-cancer-tumors-classification
-Breast Cancer Tumor Classification Using Machine Learning
-This repository contains the implementation and evaluation of three machine learning algorithms—Naive Bayes, Support Vector Machines (SVM), and Artificial Neural Networks (ANN)—to classify breast tumors as benign or malignant using features from the Wisconsin Diagnostic Breast Cancer (WDBC) dataset.
+# 📊 Breast Cancer Tumor Classification Using Machine Learning
 
-The models were developed in Octave, with custom implementations focusing on statistical robustness and performance. Data preprocessing included normalization and class-balanced splits for training and testing. Evaluation was based on standard classification metrics: accuracy, precision, recall, and F1-score.
+This repository contains the implementation and evaluation of three machine learning algorithms—**Naive Bayes**, **Support Vector Machines (SVM)**, and **Artificial Neural Networks (ANN)**—to classify breast tumors as **benign** or **malignant** using features from the [Wisconsin Diagnostic Breast Cancer (WDBC)](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)) dataset.
 
-🔍 Summary of Results
+The models were developed in **Octave**, with custom implementations focusing on statistical robustness and performance. Data preprocessing included normalization and class-balanced splits for training and testing. Evaluation was based on standard classification metrics: **accuracy**, **precision**, **recall**, and **F1-score**.
 
-Neural Network (ANN): Highest accuracy at 98.83%, with strong F1-score performance.
+## 🧠 Objective
 
-SVM: Achieved 93.57% accuracy using a custom implementation of the maximum-margin classifier.
+This study aims to compare the predictive performance of Naive Bayes, SVM, and Neural Networks in classifying breast tumors. Using 30 features derived from cell nuclei images, each model was trained and tested on a well-established medical dataset. The ultimate goal is to identify the most effective algorithm to support early and accurate diagnosis of breast cancer.
 
-Naive Bayes: Delivered 89.55% accuracy, standing out for its simplicity and speed.
+### 🔍 Summary of Results
+- **Neural Network (ANN)**: Highest accuracy at **98.83%**, with exceptional ability to distinguish between tumor types.
+- **Support Vector Machine (SVM)**: Accuracy of **93.57%** using a custom maximum-margin approach.
+- **Naive Bayes**: Accuracy of **89.55%**, with the benefit of high computational efficiency.
 
-For details on dataset characteristics, preprocessing, model architecture, and result analysis, please refer to the full investigation report included in this repository.
+For full methodological details and results, please refer to the included investigation report.
 
+---
+
+## 📁 Repository Contents
+
+| File | Description |
+|------|-------------|
+| `BCClassification.m` | Graphical interface where users can input tumor characteristics to classify using all three models. |
+| `nb_model.mat` | Pre-trained Naive Bayes model used by the interface. |
+| `rn_model.mat` | Pre-trained Neural Network model used by the interface. |
+| `svm_model.mat` | Pre-trained SVM model used by the interface. |
+| `WDBC_dataset.csv` | Raw dataset from the WDBC (Wisconsin Diagnostic Breast Cancer) database. |
+| `BYBC.m` | Code used to train the Naive Bayes classifier. |
+| `RNBC.m` | Code used to train the Artificial Neural Network. |
+| `SVM.m` | Code used to train the Support Vector Machine classifier. |
+| `SVMTBC1.xlsx` | Training set (70% of the dataset) used for fitting all models. |
+| `SVMPBC0.xlsx` | Testing set (30%, benign cases). |
+| `SVMPBC1.xlsx` | Testing set (30%, malignant cases). |
+| `report.pdf` | Full investigation report describing methodology, experiments, and analysis. |
+
+---
+
+## 🖼️ Interface Preview
+
+> You can include a screenshot of the GUI by uploading an image and linking it below:
+
+```markdown
+![Interface Preview](images/interface_preview.png)
